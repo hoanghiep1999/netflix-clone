@@ -1,0 +1,268 @@
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  text-decoration: none;
+  width: 135px;
+  height: 90px;
+  display: block;
+}
+
+.header-logo > img {
+  width: 100%;
+}
+
+.header-list {
+  padding-left: 0;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.header-list > li {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+}
+
+.header-list > li:last-child {
+  padding: 0;
+  display: none;
+}
+
+.header-list li div, .header-list li a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-weight: 400;
+  font-size: 20px;
+  transition: all .2s;
+}
+
+.header-list > li > div {
+  cursor: pointer;
+}
+
+.header-list > li > div:hover, .header-list > li a:hover {
+  color: #b3b3b3;
+}
+
+.header-list-child {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 180%;
+  left: -50%;
+  transform: translateX(17%);
+  border-radius: 7px;
+  border: 1px solid #808080;
+  z-index: 2;
+  background-color: #000;
+  box-shadow: 0 0 20px #4b4b4b;
+  display: none;
+}
+
+.list-last-child {
+  left: -36%;
+}
+
+.header-list > li:hover > .header-list-child {
+  display: block;
+}
+
+.header-list-child::before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  left: -15px;
+}
+
+.header-list-child li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 17px;
+  display: block;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.header-close-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.header-close-btn:hover {
+  opacity: 0.7;
+}
+
+.header-close-btn::before, .header-close-btn::after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #e5e5e5;
+}
+
+.header-close-btn::before {
+  transform: rotate(45deg);
+}
+
+.header-close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-list-btn {
+  display: block;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+  display: none;
+}
+
+.header-list-btn div {
+  width: 100%;
+  height: 3px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 10px;
+}
+
+.header-list-btn::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-list-btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #e5e5e5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Header list responsive */
+@media screen and (max-width: 959px) {
+  .header-list {
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    transition: all .6s;
+    overflow-y: auto;
+  }
+
+  .header-list.active {
+    right: 0;
+  }
+
+  .header-list > li {
+    padding: 20px 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-list li div, .header-list > li > a {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .header-list li div {
+    cursor: text;
+  }
+
+  .header-list li div:hover {
+    color: currentColor;
+  }
+
+  .header-list-child {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    display: block;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .header-list-child::before {
+    display: none;
+  }
+  
+  .header-list-child li a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-list > li:last-child {
+    padding: 30px 0;
+    display: block;
+  }
+
+  .header-close-btn {
+    transform: scale(1.2);
+    position: relative;
+    top: -18px;
+  }
+
+  .header-list-btn {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header-list-btn {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+}

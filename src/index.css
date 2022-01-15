@@ -1,13 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nunito&display=swap');
+
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  color: #f2f2f2;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Grid header */ 
+.grid-layout {
+  width: calc(100% - 70px);
+  margin: 0 auto;
+}
+
+/* Grid container */
+.grid-layout-container {
+  width: calc(100% - 100px);
+  margin: 40px auto 0 auto;
+}
+
+/* Grid page */
+.grid-layout-page {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+/* Grid to homepage */
+.grid-layout-homepage {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .grid-layout {
+    width: calc(100% - 75px);
+  }
+  
+  .grid-layout-container {
+    width: calc(100% - 65px);
+  }
+
+  .grid-layout-page {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .grid-layout {
+    width: calc(100% - 70px);
+  }
+  
+  .grid-layout-container {
+    width: calc(100% - 70px);
+    margin-top: 10px;
+  }
+
+  .grid-layout-page {
+    width: calc(100% - 95px);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .grid-layout {
+    width: calc(100% - 20px);
+  }
+  
+  .grid-layout-container {
+    width: calc(100% - 50px);
+    margin-top: 0;
+  }
+
+  .grid-layout-page {
+    width: calc(100% - 65px);
+  }
+}
+

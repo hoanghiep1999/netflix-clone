@@ -24,7 +24,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Netlix Clone - React App</title>
+
+    <!-- Add icon link -->
+    <link rel="shortcut icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon">
+    <style>
+      /* Custom scrollbar */
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background-color: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background-color: #e50914; 
+        border-radius: 4px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #cc0812; 
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +66,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+    /* Scroll to top button */
+    var fixedBtnElement = document.querySelector('.fixed-btn');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 550) {
+        fixedBtnElement.classList.add('active');
+      }
+      else {
+        fixedBtnElement.classList.remove('active');
+      }
+    })
+  </script>
 </html>

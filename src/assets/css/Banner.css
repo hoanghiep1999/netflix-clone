@@ -1,0 +1,265 @@
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.banner-info {
+  background-image: linear-gradient(to right, rgba(0,0,0,1), transparent);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-info-wrap {
+  position: absolute;
+  top: 20%;
+  width: 75%;
+}
+
+.banner-info-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: inline-block;
+  transform: scale(1, 1.1);
+  text-shadow: 2px 2px 4px rgb(20 20 20 / 45%);
+}
+
+.banner-info-wrap ul {
+  padding: 2px 0;
+  margin: 8px 0;
+  list-style: none;
+}
+
+.banner-info-wrap ul li {
+  display: inline-block;
+  padding: 4px 16px 4px 0;
+  color: #cbcaca;
+}
+
+.banner-info-wrap ul li.time {
+  font-size: 15px;
+}
+
+.banner-info-wrap ul li.point {
+  padding: 4px 10px;
+  font-weight: bold;
+  color: rgb(39, 174, 96);
+  border: 1px solid rgb(39, 174, 96);
+}
+
+.banner-info-wrap ul li:last-child {
+  color: rgb(39, 174, 96);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.banner-info-description {
+  width: 80%;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 24px;
+  color: #cbcaca;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-shadow: 2px 2px 4px rgb(20 20 20 / 45%);
+}
+
+.banner-button-wrap {
+  padding: 18px 0;
+  display: flex;
+}
+
+.banner-button {
+  width: 150px;
+  height: 44px;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.banner-button:first-child {
+  background-color: #e50914;
+}
+
+.banner-button:first-child div {
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  transform: scale(1.5, 1);
+}
+
+.banner-button:first-child:hover {
+  background-color: #cc0812;
+}
+
+.banner-button:nth-child(2) {
+  background-color: rgba(109,109,110,.7);
+  margin-left: 16px;
+}
+
+.banner-button:nth-child(2):hover {
+  background-color: #6d6d6e;
+}
+
+.banner-button span {
+  position: relative;
+  top: 1px;
+}
+
+.banner-button:last-child span {
+  left: 2px;
+}
+
+.banner-button svg {
+  position: relative;
+  right: 3px;
+}
+
+.banner-button-add, .banner-button-remove {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+.banner-button-add:hover, .banner-button-remove:hover {
+  text-decoration: underline;
+}
+
+.banner-info-homepage, .banner-info-genres {
+  display: block;
+  color: #cbcaca;
+  text-shadow: 2px 2px 4px rgb(20 20 20 / 45%);
+  font-style: italic;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.banner-info-homepage a {
+  color: inherit;
+}
+
+.banner-info-homepage a:hover {
+  color: #a6a6a6;
+}
+
+@media screen and (max-width: 1279px) {
+  .banner img {
+    height: 500px;
+  }
+
+  .banner-info-wrap {
+    width: 80%;
+    padding-left: 20px;
+  }
+    
+  .banner-info-description {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {   
+  .banner-info-wrap {
+    width: 80%;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner img {
+    height: 400px;
+  }
+
+  .banner-info-homepage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .banner-info-wrap {
+    top: 10%;
+    width: 100%;
+  }
+
+  .banner-info {
+    background-image: none;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .banner-info-name, .banner-info-description {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .banner-info-wrap {
+    top: 15%;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .banner-info-name {
+    width: 90%;
+    font-size: 27px;
+  }
+
+  .banner-info-description {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .banner img {
+    height: 300px;
+  }
+
+  .banner-info-wrap {
+    top: 10%;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .banner-info-wrap > ul {
+    display: none;
+  }
+
+  .banner-info-name {
+    font-size: 24px;
+  }
+
+  .banner-info-description {
+    width: 90%;
+    font-size: 15px;
+    -webkit-line-clamp: 3;
+    padding-top: 18px;
+  }
+
+  .banner-button {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

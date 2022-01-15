@@ -1,0 +1,230 @@
+.watch-page {
+  padding-top: 40px;
+  border-top: 8px solid #222;
+}
+
+.watch-label {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.watch-label div {
+  display: inline-block;
+}
+
+.watch-label span {
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 15px;
+  letter-spacing: 0;
+}
+
+/* TV Show */
+.watch-wrap1 {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.watch-main {
+  width: 70%;
+  padding-right: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.watch-main iframe {
+  width: 100%;
+  height: 490px;
+  border: none;
+  box-shadow: 0 0 10px #616161;
+}
+
+.watch-others {
+  width: 25%;
+  min-height: 494px;
+  height: fit-content;
+  padding-left: 30px;
+  border-left: 1px solid #616161;
+}
+
+.watch-others span {
+  display: block;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.watch-others span:first-child {
+  padding-top: 0;
+}
+
+.watch-others ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.watch-others ul:nth-child(2) {
+  font-size: 16px;
+}
+
+.watch-others ul li, .watch-others ul li a {
+  display: block;
+  padding-bottom: 15px;
+  color: #cbcaca;
+}
+
+.watch-others ul li.watch-overview {
+  text-align: justify;
+}
+
+.watch-others ul li:last-child, .watch-others ul li a {
+  padding-bottom: 0;
+}
+
+.watch-others ul li a:hover {
+  color: #a6a6a6;
+}
+
+.watch-episode {
+  padding-top: 30px;
+}
+
+.watch-episode > span {
+  display: block;
+  padding-bottom: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1279px) {
+  .watch-main iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .watch-label span {
+    font-size: 21px;
+  }
+
+  .watch-main iframe {
+    height: 420px;
+  }
+
+  .watch-others {
+    min-height: 420px;
+  }
+
+  .watch-main {
+    width: 68%;
+  }
+
+  .watch-episode {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .watch-label {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .watch-label span {
+    font-size: 17px;
+  }
+
+  .watch-main {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .watch-main iframe {
+    height: 450px;
+  }
+
+  .watch-others {
+    width: 100%;
+    padding: 30px 0 0 0;
+    border-left: 0;
+    min-height: fit-content;
+  }
+
+  .watch-episode {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .watch-label {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .watch-label span {
+    padding: 10px 0 0 0;
+    font-size: 16px;
+  }
+
+  .watch-main {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .watch-main iframe {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .watch-label span {
+    font-size: 15px;
+  }
+
+  .watch-main iframe {
+    height: 300px;
+  }
+
+  .watch-others span {
+    padding-top: 20px;
+  }
+
+  .watch-others ul li {
+    font-size: 15px;
+  }
+
+  .watch-episode {
+    padding-top: 40px;
+  }
+
+  .watch-episode > span {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .watch-main iframe {
+    height: 210px;
+  }
+
+  .watch-others span {
+    font-size: 20px;
+  }
+
+  .watch-others ul li {
+    font-size: 14px;
+  }
+
+  .watch-episode {
+    padding-top: 30px;
+  }
+}

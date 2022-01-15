@@ -1,0 +1,191 @@
+.main-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.main-item {
+  margin-top: 40px;
+}
+
+.main-first-item {
+  margin-top: 0;
+}
+
+.main-item-head {
+  width: 40%;
+}
+
+.main-item-head div {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.main-item-head a:first-child {
+  text-decoration: none;
+  color: inherit;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.main-item-head:hover a:last-child {
+  opacity: 1;
+}
+
+.main-item-head a:last-child {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 16px;
+  opacity: 0;
+  transition: opacity .7s;
+}
+
+.main-item-head a:last-child:hover {
+  text-decoration: underline;
+}
+
+.main-item-body {
+  padding: 16px 0 0 0;
+  list-style: none;
+}
+
+.main-item-body li > a, .main-item-body li.upcoming > a {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  transition: all .6s;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 0 0 5px #333;
+}
+
+.main-item-body li > a {
+  height: 170px;
+}
+
+.main-item-body li > a > div, .main-item-body li.upcoming > a > div {
+  display: inline-flex;
+  font-size: 18px;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  text-shadow: -2px 0 20px #000;
+  transition: all .6s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-item-body li > a > div {
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-break: break-all;
+}
+
+.main-item-body li.upcoming > a {
+  height: 450px;
+}
+
+.main-item-body li.upcoming > a > div {
+  padding: 15px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 19px;
+}
+
+.main-item-body li.upcoming > a > div span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  color: #a6a6a6;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.main-item-body li > a:hover > div, .main-item-body li.upcoming > a:hover > div {
+  opacity: 1;
+}
+
+/* Breakpoints: (1280) 1024 768 576 480 320 */
+@media screen and (max-width: 1023px) {
+  .main-item {
+    margin-top: 30px;
+  }
+
+  .main-item-body li > a, .main-item-body li.upcoming > a {
+    height: 260px;
+  }
+
+  .main-item-body li > a > div, .main-item-body li.upcoming > a > div {
+    font-size: 18px;
+  }
+
+  .main-item-body li.upcoming > a > div {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+  }
+
+  .main-item-body li.upcoming > a > div span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-item-head {
+    width: 100%;
+  }
+
+  .main-item-body li > a, .main-item-body li.upcoming > a {
+    height: 220px;
+  }
+
+  .main-item-body li > a > div, .main-item-body li.upcoming > a > div {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main-item-body li.upcoming > a > div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-item-body li > a > div, .main-item-body li.upcoming > a > div {
+    font-size: 16px;
+  }
+
+  .main-item-body li.upcoming > a > div span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .main-item-head {
+    width: 80%;
+  }
+
+  .main-item-head a:first-child {
+    font-size: 17px;
+  }
+
+  .main-item-body li > a, .main-item-body li.upcoming > a {
+    height: 170px;
+  }
+}

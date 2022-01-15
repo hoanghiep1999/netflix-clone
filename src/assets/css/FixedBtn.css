@@ -1,0 +1,42 @@
+.fixed-btn {
+  border-radius: 50%;
+  background-color: #e50914;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .7s, visibility .7s;
+  visibility: hidden;
+}
+
+.fixed-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fixed-btn:hover {
+  background-color: #fc1924;
+}
+
+@media screen and (max-width: 575px) {
+  .fixed-btn {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .fixed-btn {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+  }
+}

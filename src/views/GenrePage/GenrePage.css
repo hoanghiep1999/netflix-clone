@@ -1,0 +1,131 @@
+.genre-page {
+  padding-top: 40px;
+  border-top: 8px solid #222;
+}
+
+.genre-label {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.genre-label > span {
+  font-weight: normal;
+}
+
+.genre-list {
+  padding: 20px 0 0 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  flex-wrap: wrap;
+}
+
+.genre-list li {
+  width: calc(25% - 20px);
+  height: 170px;
+  padding: 10px;
+}
+
+.genre-list li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  transition: all .6s;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 0 0 20px #333;
+}
+
+.genre-list li > a > div {
+  display: inline-flex;
+  font-size: 18px;
+  line-height: 26px;
+  word-break: break-all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: -2px 0 20px #000;
+  transition: all .6s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.genre-list li > a:hover > div {
+  opacity: 1;
+}
+
+.show-more-btn {
+  display: block;
+  margin-top: 20px;
+  justify-content: center;
+  border: none;
+  font-family: inherit;
+  font-size: 17px;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 6px;
+  background-color: #e50914;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.show-more-btn:hover {
+  background-color: #f40612;
+}
+
+@media screen and (min-width: 876px) and (max-width: 1023px) {
+  .genre-list li {
+    width: calc(20% - 20px);
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 875px) {
+  .genre-list li {
+    width: calc(25% - 20px);
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .genre-list li > a > div {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .genre-list li {
+    width: calc(33.333% - 20px);
+    height: 200px;
+  }
+
+  .genre-list li > a > div {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .genre-page {
+    padding-top: 35px;
+  }
+
+  .genre-label {
+    font-size: 25px;
+  }
+}

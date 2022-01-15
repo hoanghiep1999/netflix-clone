@@ -1,0 +1,30 @@
+.loading-container {
+  width: 100vw; 
+  height: 100vh; 
+  display: inline-flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.loading-label {
+  font-size: 32px; 
+  color: #e50914; 
+  margin-bottom: 12px;
+}
+
+.svgLoader {
+  width: 10em; 
+  height: 10em;
+}
+
+@media screen and (max-width: 479px) {
+  .loading-label {
+    font-size: 28px;
+  }
+
+  .svgLoader {
+    width: 8em;
+    height: 8em;
+  }
+}

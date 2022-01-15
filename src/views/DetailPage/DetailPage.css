@@ -1,0 +1,626 @@
+.detail-page {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.detail-info-top {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.detail-info-top .container {
+  padding-top: 70px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), #000);
+}
+
+.detail-info-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: inline-block;
+  transform: scale(1, 1.1);
+  text-shadow: 2px 2px 4px rgb(20 20 20 / 45%);
+}
+
+.detail-info-wrap ul {
+  padding: 0;
+  margin: 14px 0;
+  list-style: none;
+}
+
+.detail-info-wrap ul li {
+  display: inline-block;
+  padding: 4px 16px 4px 0;
+  color: #cbcaca;
+}
+
+.detail-info-wrap ul li.time {
+  font-size: 15px;
+}
+
+.detail-info-wrap ul li.point {
+  padding: 4px 10px;
+  font-weight: bold;
+  color: rgb(39, 174, 96);
+  border: 1px solid rgb(39, 174, 96);
+}
+
+.detail-info-wrap ul li:last-child {
+  color: rgb(39, 174, 96);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.detail-info-wrap2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 158px;
+}
+
+.overview {
+  width: 70%;
+}
+
+.genres {
+  width: 30%;
+}
+
+.overview span, .genres > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.overview div {
+  padding: 16px 34px 0 0;
+  height: fit-content;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+  color: #cbcaca;
+  display: block;
+}
+
+.genres ul {
+  padding: 16px 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.genres ul li {
+  padding-bottom: 6px;
+}
+
+.genres ul li a {
+  color: #cbcaca;
+  font-size: 15px;
+}
+
+.genres ul li a:hover {
+  color: #a6a6a6;
+}
+
+.video {
+  padding-top: 40px;
+}
+
+.video > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.video-list {
+  padding: 16px 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.video-item a {
+  display: block;
+  width: 100%;
+  height: 340px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: all .6s;
+  box-shadow: 0 0 20px #6a6969
+}
+
+.video-item a:hover span {
+  top: 0
+}
+
+.video-item a span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 80%;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 18px;
+  text-shadow: -2px 0 20px #000;
+  transition: all .6s;
+}
+
+.review {
+  padding-top: 40px;
+}
+
+.review > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.review-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.review-none-result {
+  margin-top: 16px;
+  color: #cbcaca;
+  text-transform: uppercase;
+}
+
+.recommend-none-result {
+  color: #cbcaca;
+  text-transform: uppercase;
+}
+
+.review-item {
+  padding: 20px 0;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-item img {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #484848;
+}
+
+.review-details {
+  flex: 1;
+  padding-left: 30px;
+  text-align: justify;
+}
+
+.review-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.review-name > span {
+  font-size: 20px;
+}
+
+.review-name > span span {
+  margin-left: 8px;
+}
+
+.review-star {
+  background-image: url("https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-49-star-67a24f6d4324aa644c594653e762b1c0de2b3e1ce0852171cfa49cc2650de374.svg");
+  filter: invert(1);
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-right: 6px;
+  position: relative;
+  top: 2px;
+}
+
+.review-time {
+  font-size: 15px;
+  color: #cbcaca;
+  padding: 10px 0;
+}
+
+.review-content {
+  padding-top: 10px;
+  border-top: 1px solid #cbcaca;
+  word-break: break-word;
+}
+
+.cast {
+  padding-top: 40px;
+}
+
+.cast > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cast > a {
+  text-decoration: none;
+  color: #cbcaca;
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.cast > a:hover {
+  text-decoration: underline;
+}
+
+.cast-list {
+  padding: 16px 0 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cast-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cast-item img {
+  width: 70px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all .7s;
+}
+
+.cast-item img:hover {
+  opacity: 0.7;
+}
+
+.cast-item-info {
+  padding-left: 20px;
+}
+
+.cast-item-info a {
+  font-size: 17px;
+  color: inherit;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.cast-item-info a:hover {
+  text-decoration: underline;
+}
+
+.cast-item-info span{
+  display: block;
+  max-width: 160px;
+  color: #cbcaca;
+  font-size: 13px;
+  padding-top: 3px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.recommendations-movie, .similar-movie {
+  padding-top: 40px;
+}
+
+.recommendations-movie span, .similar-movie span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.recommendations-movie ul, .similar-movie ul {
+  padding: 16px 0 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendations-movie ul li, .similar-movie ul li {
+  width: 230px;
+  height: 140px;
+}
+
+.recommendations-movie ul li a, .similar-movie ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  transition: all .6s;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  box-shadow: 0 0 20px #333;
+}
+
+.recommendations-movie ul li a > div, .similar-movie ul li a > div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-break: break-all;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+  text-shadow: -2px 0 20px #000;
+  transition: all .6s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.recommendations-movie ul li a:hover > div, .similar-movie ul li a:hover > div {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1279px) {
+  .recommendations-movie ul li, .similar-movie ul li {
+    width: calc(20% - 5px);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .overview div {
+    font-size: 15px;
+  }
+
+  .video-item a {
+    height: 300px;
+  }
+
+  .cast-item-info {
+    padding: 10px 0 0;
+  }
+
+  .cast-item-info span {
+    padding-top: 10px;
+  }
+
+  .cast > a {
+    margin-top: 20px;
+  }
+
+  .review-content {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .recommendations-movie ul li, .similar-movie ul li {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .video-item a {
+    height: 280px;
+  }
+
+  .cast-list {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .cast-item {
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .cast-item:first-child {
+    margin-top: 10px;
+  }
+
+  .cast-item-info {
+    flex: 1;
+    padding-left: 30px;
+  }
+
+  .cast-item-info div {
+    font-size: 19px;
+  }
+
+  .cast-item-info span {
+    font-size: 14px;
+    max-width: 100%;
+    display: block;
+  }
+
+  .recommendations-movie ul li, .similar-movie ul li {
+    height: 200px;
+  }
+
+  .recommendations-movie ul li a > div, .similar-movie ul li a > div {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail-info {
+    top: 90px;
+    padding-top: 40px;
+  }
+
+  .detail-info-wrap2 {
+    flex-direction: column;
+  }
+
+  .overview, .genres {
+    width: 100%;
+  }
+
+  .overview span, .genres > span, .video > span, .cast > span, .review > span, .recommendations-movie span, .similar-movie span {
+    display: block;
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .overview div {
+    padding-right: 0;
+  }
+
+  .genres, .video {
+    padding-top: 22px;
+  }
+
+  .video-item a {
+    width: 100%;
+    height: 220px;
+  }
+
+  .recommendations-movie ul li, .similar-movie ul li {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .detail-info {
+    padding-top: 50px;
+  }
+
+  .overview div {
+    font-size: 14px;
+  }
+
+  .video-item a {
+    height: 200px;
+  }
+
+  .review-item {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .review-item:first-child {
+    margin-top: 0;
+  }
+
+  .review-item img {
+    width: 75px;
+    height: 80px;
+  }
+
+  .review-details {
+    padding-left: 0;
+  }
+
+  .review-name {
+    padding-top: 15px;
+  }
+
+  .review-time {
+    font-size: 13px;
+  }
+
+  .review-content {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    overflow: hidden;
+    word-break: break-word;
+  }
+
+  .recommendations-movie ul li, .similar-movie ul li {
+    height: 130px;
+  }
+
+  .recommendations-movie ul li a > div, .similar-movie ul li a > div {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .detail-info {
+    top: 162px;
+    padding-top: 30px;
+  }
+
+  .detail-info-name {
+    font-size: 26px;
+  }
+
+  .detail-info-wrap ul {
+    font-size: 14px;
+  }
+
+  .overview span, .genres > span, .video > span, .cast > span, .review > span, .recommendations-movie span, .similar-movie span {
+    font-size: 20px;
+  }
+
+  .genres ul {
+    font-size: 14px;
+  }
+
+  .video-item a {
+    width: 92px;
+    height: 170px;
+  }
+
+  .video-item a span {
+    font-size: 13px;
+  }
+
+  .cast-item img {
+    width: 60px;
+    height: 65px;
+  }
+
+  .cast-item-info span {
+    font-size: 13px;
+  }
+
+  .review-item img {
+    width: 60px;
+    height: 65px;
+  }
+
+  .review-name {
+    padding-top: 10px;
+  }
+
+  .review-name > span {
+    font-size: 16px;
+  }
+
+  .review-content {
+    font-size: 13px;
+    -webkit-line-clamp: 10;
+  }
+
+  .review-none-result, .recommend-none-result {
+    font-size: 14px;
+  }
+
+  .recommendations-movie ul li , .similar-movie ul li {
+    height: 90px;
+  }
+}
