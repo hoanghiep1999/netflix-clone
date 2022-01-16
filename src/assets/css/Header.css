@@ -259,7 +259,7 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 575px) {
   .header {
     flex-direction: column;
     height: fit-content;

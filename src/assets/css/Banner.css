@@ -209,7 +209,7 @@
   }
 
   .banner-info-name, .banner-info-description {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -247,14 +247,15 @@
   }
 
   .banner-info-name {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .banner-info-description {
     width: 90%;
-    font-size: 15px;
+    font-size: 14px;
     -webkit-line-clamp: 3;
     padding-top: 18px;
+    line-height: 21px;
   }
 
   .banner-button {
