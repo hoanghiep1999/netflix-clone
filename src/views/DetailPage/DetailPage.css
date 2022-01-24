@@ -334,15 +334,16 @@
 
 .recommendations-movie ul, .similar-movie ul {
   padding: 16px 0 0;
-  margin: 0;
+  margin: 0 -13px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .recommendations-movie ul li, .similar-movie ul li {
   width: 230px;
   height: 140px;
+  padding: 0 13px;
 }
 
 .recommendations-movie ul li a, .similar-movie ul li a {
@@ -444,7 +445,7 @@
   }
 
   .cast-item-info div {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .cast-item-info span {
@@ -495,8 +496,13 @@
     height: 220px;
   }
 
+  .recommendations-movie ul, .similar-movie ul {
+    margin: 0 -6px;
+  }
+
   .recommendations-movie ul li, .similar-movie ul li {
     height: 160px;
+    padding: 0 6px;
   }
 }
 
@@ -549,8 +555,13 @@
     word-break: break-word;
   }
 
+  .recommendations-movie ul, .similar-movie ul {
+    margin: 0 -2px;
+  }
+
   .recommendations-movie ul li, .similar-movie ul li {
     height: 130px;
+    padding: 0 2px;
   }
 
   .recommendations-movie ul li a > div, .similar-movie ul li a > div {

@@ -258,6 +258,10 @@
     line-height: 21px;
   }
 
+  .banner-info-genres {
+    font-size: 14px;
+  }
+
   .banner-button {
     width: 150px;
     height: 40px;
