@@ -292,7 +292,7 @@ function App() {
                                 <li>
                                   <Link to={`/detail/movie/${item.title.replace(/\s/g, '').replaceAll('?', '')}-${item.id}`} 
                                     style={(item.backdrop_path || item.poster_path) ? {
-                                      backgroundImage: `url(${IMAGE_URL}/${item.backdrop_path || item.details.poster_path})`,
+                                      backgroundImage: `url(${IMAGE_URL}/${item.backdrop_path || item.poster_path})`,
                                     } : {
                                       backgroundImage: 'url("https://images.assetsdelivery.com/compings_v2/yehorlisnyi/yehorlisnyi2104/yehorlisnyi210400016.jpg")',
                                     }}>

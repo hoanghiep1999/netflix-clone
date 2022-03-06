@@ -178,7 +178,7 @@
 
 @media screen and (max-width: 479px) {
   .main-item-head {
-    width: 80%;
+    width: 100%;
   }
 
   .main-item-head a:first-child {
